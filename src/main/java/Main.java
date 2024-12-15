@@ -183,15 +183,58 @@ public class Main {
                             default:
                                 System.out.println("Błędny znak lub wartość.");}
 
-        //obiektowość
-        public class Punkt{
-
-        }
+        //tworzenie obiektu classy punkt
+        //odwołanie do obiektu Punkt
 
 
+        Punkt p1 = new Punkt();
+        /*
+        int poleXobiektuP1 = p1.pobierzX();
+        int poleYobiektuP1 = p1.pobierzY();
+        System.out.println(poleXobiektuP1);
+        System.out.println(poleYobiektuP1);
+*/
+                Punkt p2 = new Punkt();
+
+        //p2.x = 134;
 
 
-    }}
+        //użycie metody z klasy Punt
+        p1.wyswietlWspolrzedne();
+        p2.wyswietlWspolrzedne();
+
+        /*
+        p1.pobierzX();
+        p1.pobierzY();
+
+        p1.ustawX(x: 12);
+        System.out.println(p1.pobierzX());
+
+        p1.ustawY(mojeY: 89);;
+        System.out.println(p1.pobierzY());
+        */
+
+        Samochod audi = new Samochod();
+
+        audi.setIlosc_drzwi(5);
+        System.out.println(audi.getIlosc_drzwi());
+
+        audi.setModel("A5");
+        System.out.println(audi.getModel());
+
+        audi.setRok_produkacji(2015);
+        System.out.println(audi.getRok_produkacji());
+
+        audi.setV_max(230);
+        System.out.println(audi.getV_max());
+
+        boolean stan_samochodu = audi.rusz();
+        System.out.println(stan_samochodu);
+        stan_samochodu = audi.zatrzymaj_sie();
+        System.out.println(stan_samochodu);
+
+    }
+}
 
 
 
