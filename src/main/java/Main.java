@@ -117,6 +117,79 @@ public class Main {
 
         //Test git
 
+        //pętla zwracająca kody ASCII
+        for (int licznik = 0; licznik < 256; licznik++) {
+            char znakch = (char) licznik;
+            System.out.println(licznik + " = " + znakch);
+        }
+
+        int speed = 10;
+        if(speed >= 1 && speed < 10) {
+            System.out.println("Przekroczyłeś prędkość - małe ostrzeżenie");
+        } else if (speed >= 10){
+            System.out.println("Duże ostrzeżenie");
+        }
+
+        //inicjalizacja tablicy i iteracja
+        int [] tablica = {0,1,2,3,4,5,6,7,8,9};
+        for (int i = 1; i <= 9; i++){
+            System.out.println(tablica[i]);
+        }
+
+        //deklaracja tablicy bez wartośći
+        int [] nowaTablica = new int[10];
+        for (int i = 0; i <= 9; i++) {
+            System.out.println(nowaTablica[i]);
+        }
+            for (int i = 0; i <= 9; i++){
+                nowaTablica[i] = i + 21;
+                System.out.println(nowaTablica[i]);
+            }
+        for (int i = 0; i <= 9; i++){
+            nowaTablica[i] = i + 21;
+            System.out.println(nowaTablica[i]);
+        }
+
+        String[] tablicaDniTygodnia = {"poniedziałek", "wtorek", "środa", "czwartek", "piątek"};
+        for (int i = 0; i < tablicaDniTygodnia.length; i++){
+            System.out.println(tablicaDniTygodnia[i]);
+        }
+
+        //pętla zagnieżdżone
+        //13 - nested loops
+        for(int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+        System.out.println("Dla i =  " + i + ", j = " + j);
+        System.out.println("A zatem " + i + " * " + j + " to " + i*j);
+        }}
+
+        //switch
+        //14 - instrukcja warunkowa
+
+        char operacja = '+';int a = 3, b = 9;
+        switch (operacja) {
+            case '+':
+                System.out.println("Suma to " + (a + b));
+                break;
+                case '-':
+                    System.out.println("Różnica to " + (a - b));
+                    break;
+                    case '*':
+                        System.out.println("Iloczyn to " + (a * b));
+                        break;
+                        case '/':
+                            System.out.println("Iloraz to " + (a/b));
+                            break;
+                            default:
+                                System.out.println("Błędny znak lub wartość.");}
+
+        //obiektowość
+        public class Punkt{
+
+        }
+
+
+
 
     }}
 
