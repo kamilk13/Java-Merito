@@ -233,6 +233,23 @@ public class Main {
         stan_samochodu = audi.zatrzymaj_sie();
         System.out.println(stan_samochodu);
 
+        //wywołanie metody statycznej
+        Punkt.metodaStatyczna();
+        System.out.println(Punkt.poleStatyczne);
+
+        //dziedziecznie
+        Punkt3D punkt3D = new Punkt3D();
+        punkt3D.z = 3;
+        punkt3D.x = 5;
+        punkt3D.y = 7;
+        System.out.println(punkt3D.z);
+        System.out.println(punkt3D.x);
+        System.out.println(punkt3D.y);
+
+        Punkt punkt = new Punkt();
+
+        OveriddenMethods on1 = new OveriddenMethods();
+
     }
 }
 

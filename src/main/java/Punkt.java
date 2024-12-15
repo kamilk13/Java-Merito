@@ -1,7 +1,13 @@
 public class Punkt {
 
+     int x = 10; //pola klasy
+     int y = 12; //pola klasy
+
+    /*
     private int x = 10; //pola klasy
+
     private int y = 12; //pola klasy
+    */
 /*
     int pobierzX(){
         return x;
@@ -40,6 +46,13 @@ public class Punkt {
         System.out.println("Wyświetlamy x " + x);
         System.out.println("Wyświetlamy x " + y);
     }
+
+    static void metodaStatyczna(){
+        System.out.println("Test metody statycznej - dostępnej dla klasy bez instancjonowania obiektu");
+    }
+
+    static int poleStatyczne = 123;
+
 }
 
 
